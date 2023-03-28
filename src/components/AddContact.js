@@ -31,7 +31,7 @@ class AddContact extends React.Component {
             />
           </div>
           <div className="field">
-            <label>number</label>
+            <label>Phone number</label>
             <input
               type="number"
               name="number"
