@@ -1,9 +1,9 @@
 
 import React, {useState, useEffect} from "react";
 import './App.css';
-import AddContact from './components/AddContact';
-import ContatctList from './components/ContatctList';
-import Header from './components/Header';
+import AddContact from './AddContact';
+import ContactList from './ContactList';
+import Header from './Header';
 
 function App() {
   const LOCAL_STORAGE_KEY = "contacts";
@@ -29,10 +29,11 @@ function App() {
     <div className="ui container">
       <Header/>
       <AddContact addContactHandler={addContactHandler}/>
-      <ContatctList contacts={contacts}/>
+      <ContactList contacts={contacts}/>
     
     </div>
   );
 }
 
 export default App;
+
